@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+				addrulepath="/administrator/components/com_backpic/models/rules"
+>
+	<fieldset
+				name="details"
+				label="COM_BACKPIC_TEACHER_DETAILS"
+	>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="name"
+				type="text"
+				label="تیتر"
+				description="COM_BACKPIC_TEACHER_NAME_DESC"
+				size="40"
+				class="inputbox"
+				validate="greeting"
+				required="true"
+				default=""
+				/>
+
+				<field
+			name="pic"
+			type="media"
+			label="تصویر بک گراند"
+			description="COM_BACKPIC_TEACHER_AVATAR_DESC"
+				 />
+
+		<field
+				name="article_id"
+				type="text"
+				label="شناسه مطالب"
+				description="COM_BACKPIC_TEACHER_NAME_DESC"
+				size="40"
+				class="inputbox"
+				validate="greeting"
+				required="true"
+				default=""
+				/>
+    		<field
+				name="width"
+				type="text"
+				label="عرض"
+				description="COM_BACKPIC_TEACHER_EMAIL_DESC" 
+				size="60"
+				class="inputbox"
+				default=""
+				/>
+				<field
+				name="height"
+				type="text"
+				label="ارتفاع"
+				description="COM_BACKPIC_TEACHER_CALLNUMBER_DESC" 
+				size="12"
+				class="inputbox"
+				default=""
+				/>
+	</fieldset>
+	
+</form>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+
+	<name>COM_BACKPIC</name>
+	<creationDate>February 2016</creationDate>
+	<author>Trangell co</author>
+	<authorEmail>info@trangell.com</authorEmail>
+	<authorUrl>https://www.trangell.com</authorUrl>
+	<copyright>Trangell.com</copyright>
+	<license>License GUN</license>
+	<version>0.0.2</version>
+	<description>COM_BACKPIC_DESCRIPTION</description>
+	
+	<updateservers>
+        <server type="extension" priority="1" name="COM_BACKPIC">https://trangell.com/ext/updates/component/com_backpic.xml</server>
+    </updateservers>
+	
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+		
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+<update> 
+		<schemas> 
+			<schemapath type="mysql">sql/updates/sql</schemapath> 
+		</schemas> 
+	</update>
+
+	<files folder="site">
+		<filename>index.html</filename>
+	</files>
+	
+
+        	
+<media destination="com_backpic" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link='index.php?option=com_backpic' img="../media/com_backpic/images/tux-16x16.png">COM_BACKPIC_MENU</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>backpic.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>css</folder>
+			<folder>fonts</folder>
+			<folder>imgaes</folder>
+		</files>
+		<languages folder="admin/language">
+        		<language tag="en-GB">en-GB.com_backpic.ini</language>
+                <language tag="en-GB">en-GB.com_backpic.sys.ini</language>
+        		<language tag="fa-IR">fa-IR.com_backpic.ini</language>
+                <language tag="fa-IR">fa-IR.com_backpic.sys.ini</language>
+		</languages>
+	</administration>
+
+</extension>
