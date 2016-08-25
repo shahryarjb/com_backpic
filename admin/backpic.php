@@ -7,7 +7,7 @@
 defined('_JEXEC') or die('Restricted access');
 
 $document = JFactory::getDocument();
-$document->addStyleDeclaration('.icon-backpic {background-image: url(../media/com_backpic/images/tux-16x16.png);}');
+//$document->addStyleDeclaration('.icon-backpic {background-image: url(../media/com_backpic/images/tux-16x16.png);}');
 
 if (!JFactory::getUser()->authorise('core.manage', 'com_backpic'))
 {

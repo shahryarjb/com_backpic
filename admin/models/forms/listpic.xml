@@ -2,15 +2,15 @@
 <form
 				addrulepath="/administrator/components/com_backpic/models/rules"
 >
-	<fieldset
+				<fieldset
 				name="details"
 				label="COM_BACKPIC_TEACHER_DETAILS"
-	>
-		<field
+				>
+				<field
 				name="id"
 				type="hidden"
 				/>
-		<field
+				<field
 				name="name"
 				type="text"
 				label="تیتر"
@@ -23,13 +23,13 @@
 				/>
 
 				<field
-			name="pic"
-			type="media"
-			label="تصویر بک گراند"
-			description="COM_BACKPIC_TEACHER_AVATAR_DESC"
+				name="pic"
+				type="media"
+				label="تصویر بک گراند"
+				description="COM_BACKPIC_TEACHER_AVATAR_DESC"
 				 />
 
-		<field
+				<field
 				name="article_id"
 				type="text"
 				label="شناسه مطالب"
@@ -40,7 +40,7 @@
 				required="true"
 				default=""
 				/>
-    		<field
+    				<field
 				name="width"
 				type="text"
 				label="عرض"
@@ -58,6 +58,39 @@
 				class="inputbox"
 				default=""
 				/>
-	</fieldset>
-	
+				<field 
+				    name="type"
+				    type="list"
+				    class="inputbox" 
+				    default="" 
+				    label="نوع"
+				    required="true" >
+				    	<option value="1">جوملا</option>
+  					<option value="2">کی ۲</option>
+  					<option value="3">ایزی بلاگ</option>
+    				</field>
+    				<field 
+    					name="custom" 
+    					type="textarea" 
+    					default="default" 
+    					label="وارد کردن کد css" 
+    					description="" 
+    					rows="10" 
+    					cols="5" />
+
+	    				<field 
+	    					name="template_name"
+	    					type="sql"
+	    					multiple="false"
+	    					query="SELECT template AS value, title AS template_name FROM #__template_styles"
+	    					class="inputbox" 
+	    					default="" 
+	    					label="انتخاب قالب"
+	    					required="false" >
+				    <option value="0">انتخاب قالب</option>
+	  
+	    			</field>
+
+
+				</fieldset>
 </form>

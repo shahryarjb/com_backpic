@@ -6,6 +6,9 @@ CREATE TABLE IF NOT EXISTS `#__backpic` (
   `width` varchar(8) NOT NULL,
   `height` varchar(8) NOT NULL,
   `published` tinyint(2) NOT NULL,
+  `type` tinyint(10) NOT NULL,
+  `menudbid` int(120) NOT NULL,
+  `custom` text NOT NULL,
+  `template_name` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
