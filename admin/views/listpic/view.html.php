@@ -121,11 +121,11 @@ class BackPicViewListpic extends JViewLegacy
 	{
 		$isNew = ($this->item->id == 0);
 		$document = JFactory::getDocument();
-		$document->setTitle($isNew ? JText::_('COM_MINIUNIVERSITY_MINIUNIVERSITY_CREATING')
-		                           : JText::_('COM_MINIUNIVERSITY_MINIUNIVERSITY_EDITING'));
+		$document->setTitle($isNew ? JText::_('COM_BACKPIC_ADD')
+		                           : JText::_('COM_BACKPIC_EDIT'));
 		$document->addScript(JURI::root() . $this->script);
 		$document->addScript(JURI::root() . "/administrator/components/com_backpic"
 		                                  . "/views/listpic/submitbutton.js");
-		JText::script('COM_MINIUNIVERSITY_MINIUNIVERSITY_ERROR_UNACCEPTABLE');
+		JText::script('COM_BACKPIC_ERROR_UNACCEPTABLE');
 	}
 }

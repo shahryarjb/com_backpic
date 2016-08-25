@@ -13,11 +13,11 @@
 				<field
 				name="name"
 				type="text"
-				label="تیتر"
-				description="COM_BACKPIC_TEACHER_NAME_DESC"
+				label="COM_BACKPIC_TEACHER_CONTENT_THEMS_TITLE"
+				description=""
 				size="40"
 				class="inputbox"
-				validate="greeting"
+				validate=""
 				required="true"
 				default=""
 				/>
@@ -25,15 +25,15 @@
 				<field
 				name="pic"
 				type="media"
-				label="تصویر بک گراند"
-				description="COM_BACKPIC_TEACHER_AVATAR_DESC"
+				label="COM_BACKPIC_TEACHER_CONTENT_THEMS_BACK"
+				description=""
 				 />
 
 				<field
 				name="article_id"
 				type="text"
-				label="شناسه مطالب"
-				description="COM_BACKPIC_TEACHER_NAME_DESC"
+				label="COM_BACKPIC_TEACHER_CONTENT_ID"
+				description=""
 				size="40"
 				class="inputbox"
 				validate="greeting"
@@ -43,8 +43,8 @@
     				<field
 				name="width"
 				type="text"
-				label="عرض"
-				description="COM_BACKPIC_TEACHER_EMAIL_DESC" 
+				label="COM_BACKPIC_TEACHER_CONTENT_WIDTH"
+				description="" 
 				size="60"
 				class="inputbox"
 				default=""
@@ -52,8 +52,8 @@
 				<field
 				name="height"
 				type="text"
-				label="ارتفاع"
-				description="COM_BACKPIC_TEACHER_CALLNUMBER_DESC" 
+				label="COM_BACKPIC_TEACHER_CONTENT_HEIGHT"
+				description="" 
 				size="12"
 				class="inputbox"
 				default=""
@@ -63,17 +63,18 @@
 				    type="list"
 				    class="inputbox" 
 				    default="" 
-				    label="نوع"
+				    label="COM_BACKPIC_TEACHER_CONTENT_TYPE"
 				    required="true" >
-				    	<option value="1">جوملا</option>
-  					<option value="2">کی ۲</option>
-  					<option value="3">ایزی بلاگ</option>
+				    	<option value="1">COM_BACKPIC_TEACHER_CONTENT_JOOMLA</option>
+  					<option value="2">COM_BACKPIC_TEACHER_CONTENT_K2</option>
+  					<option value="3">COM_BACKPIC_TEACHER_CONTENT_EASYBLOG</option>
+  					<option value="4">COM_BACKPIC_TEACHER_CONTENT_HIKASHOP</option>
     				</field>
     				<field 
     					name="custom" 
     					type="textarea" 
-    					default="default" 
-    					label="وارد کردن کد css" 
+    					default="" 
+    					label="COM_BACKPIC_TEACHER_CONTENT_CUSTOM_CSS" 
     					description="" 
     					rows="10" 
     					cols="5" />
@@ -85,9 +86,9 @@
 	    					query="SELECT template AS value, title AS template_name FROM #__template_styles"
 	    					class="inputbox" 
 	    					default="" 
-	    					label="انتخاب قالب"
+	    					label="COM_BACKPIC_TEACHER_CONTENT_THEMS"
 	    					required="false" >
-				    <option value="0">انتخاب قالب</option>
+				    <option value="0">COM_BACKPIC_TEACHER_CONTENT_THEMS</option>
 	  
 	    			</field>
 
