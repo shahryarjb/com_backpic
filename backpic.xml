@@ -41,8 +41,7 @@
 
         	
 <media destination="com_backpic" folder="media">
-		<filename>index.html</filename>
-		<folder>images</folder>
+		<filename>index.html</filename>	
 	</media>
 
 	<administration>
@@ -62,7 +61,7 @@
 			<folder>helpers</folder>
 			<folder>css</folder>
 			<folder>fonts</folder>
-			<folder>imgaes</folder>
+			
 		</files>
 		<languages folder="admin/language">
         		<language tag="en-GB">en-GB.com_backpic.ini</language>
